@@ -7,7 +7,13 @@ from django.contrib import messages
 
 # Create your views here.
 def dashboard(request):
-    return render(request, 'adm/index.html', {})
+    return render(request, 'adm/base.html', {})
 
 def dashboard2(request):
     return render(request, 'adm/index2.html', {})
+
+def test(request):
+    return render(request, 'adm/test.html', {})
+
+def login(request):
+    return render(request, 'pages/examples/login.html', {})
