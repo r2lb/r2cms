@@ -1,9 +1,9 @@
 from django.conf.urls import url
 
 
-from web import views
+from login import views
 
 urlpatterns = [
-    url(r'^$',views.homepage),
+    url(r'^$', views.loginpage),
 
 ]

@@ -14,6 +14,3 @@ def dashboard2(request):
 
 def test(request):
     return render(request, 'adm/test.html', {})
-
-def login(request):
-    return render(request, 'pages/examples/login.html', {})
