@@ -29,6 +29,13 @@
 <body class="hold-transition login-page">
 
 <table width="100%">
+
+<tr>
+<td colspan="2" align = "center"> <h1> Header and details Here </h1>
+</td>
+</tr>
+
+
 <tr>
   <td width="50%"> <h3> This is a test </h3> Fixed table layout is important as otherwise the browser will adjust the widths as it sees fit if the contents don't fit ie the widths are otherwise a suggestion not a rule without fixed table layout.
 
@@ -48,79 +55,65 @@ you don't need to set width of td because you may have dynamic number of columns
 
 
 this saved my day. thanks – littlejedi Feb 20 '15 at 22:28 </td>
-  <td width="50%"> <h3> This is another test </h3> Fixed table layout is important as otherwise the browser will adjust the widths as it sees fit if the contents don't fit ie the widths are otherwise a suggestion not a rule without fixed table layout.
+  <td width="50%"> <div class="login-box">
+    <div class="login-logo">
+      <a href="/static/index2.html"><b>R2</b>Login</a>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">Sign in to start your session</p>
 
-Obviously, adjust the CSS to fit your circumstances, which usually means applying the styling only to a tables with a given class or possibly with a given ID.
-shareimprove this answer
+      <form action="/static/index2.html" method="post">
+        <div class="form-group has-feedback">
+          <input type="email" class="form-control" placeholder="Email">
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group has-feedback">
+          <input type="password" class="form-control" placeholder="Password">
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <div class="checkbox icheck">
+              <label>
+                <input type="checkbox"> Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4">
+            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+  <!--
+      <div class="social-auth-links text-center">
+        <p>- OR -</p>
+        <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
+          Facebook</a>
+        <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
+          Google+</a>
+      </div>
+       /.social-auth-links -->
 
-answered Sep 22 '09 at 0:30
-cletus
-434k125795886
+      <a href="#">I forgot my password</a><br>
+      <a href="register.html" class="text-center">Register a new membership</a>
 
+    </div>
+    <!-- /.login-box-body -->
+  </div>
 
-
-and make sure you're td selector doesn't select other td's involved :D – Gordon Gustafson Sep 22 '09 at 0:31
-1
-
-you don't need to set width of td because you may have dynamic number of columns… and it works without it through. – Даниил Пронин Jan 27 '14 at 4:03
-
-
-this saved my day. thanks – littlejedi Feb 20 '15 at 22:28 </td>
+</td>
 </tr>
 
 <tr>
   <td width="50%"> This is third test </td>
   <td>
 
-<div class="login-box">
-  <div class="login-logo">
-    <a href="/static/index2.html"><b>R2</b>Login</a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
-
-    <form action="/static/index2.html" method="post">
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-        </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-        </div>
-        <!-- /.col -->
-      </div>
-    </form>
-<!--
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-        Google+</a>
-    </div>
-     /.social-auth-links -->
-
-    <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
-
-  </div>
-  <!-- /.login-box-body -->
-</div>
+this is a test
 </td>
+
 
 <!-- /.login-box -->
 
