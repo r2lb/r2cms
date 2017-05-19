@@ -46,24 +46,22 @@ answered Sep 22 '09 at 0:30
 cletus
 434k125795886
 
-
-
 and make sure you're td selector doesn't select other td's involved :D – Gordon Gustafson Sep 22 '09 at 0:31
 1
 
 you don't need to set width of td because you may have dynamic number of columns… and it works without it through. – Даниил Пронин Jan 27 '14 at 4:03
 
-
 this saved my day. thanks – littlejedi Feb 20 '15 at 22:28 </td>
   <td width="50%"> <div class="login-box">
     <div class="login-logo">
-      <a href="/static/index2.html"><b>R2</b>Login</a>
+      <a href="/web/index.html"><b>R2</b>Login</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="/static/index2.html" method="post">
+      <form action="/adm/index.html" method="post">
+        {% csrf_token %}
         <div class="form-group has-feedback">
           <input type="email" class="form-control" placeholder="Email">
           <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
